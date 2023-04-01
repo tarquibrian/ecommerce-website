@@ -1,6 +1,7 @@
+import { Props } from "next/script";
 import React from "react";
 
-const Layout = ({ children }) => {
+const Layout = ({ children }: Props) => {
   return <div>{children}</div>;
 };
 
