@@ -1,3 +1,5 @@
+@import "./variables.scss";
+
 *,
 html {
   box-sizing: border-box;
@@ -16,7 +18,7 @@ html {
 }
 
 body {
-  background-color: #edf2f4;
+  background-color: var(--main-bg-color);
 }
 
 main {
