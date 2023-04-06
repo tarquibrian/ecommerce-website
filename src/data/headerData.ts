@@ -12,12 +12,22 @@ export const HeaderData: HeaderDatas[] = [
   },
   {
     id: 2,
-    label: "Home",
-    link: "/",
+    label: "Products",
+    link: "/products",
   },
   {
     id: 3,
-    label: "Home",
-    link: "/",
+    label: "Testimonials",
+    link: "/testimonials",
+  },
+  {
+    id: 4,
+    label: "Blog",
+    link: "/blog",
+  },
+  {
+    id: 5,
+    label: "Contact",
+    link: "/contact",
   },
 ];
