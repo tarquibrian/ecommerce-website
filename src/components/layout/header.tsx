@@ -11,14 +11,26 @@ const Header = () => {
           <span>{logo.label}</span>
         </div>
         <div className="navbar__container-menu">
-          {menu.map((items) => {
-            return <h1>{items.label}</h1>;
-          })}
+          <ul>
+            {menu.map((items) => {
+              return (
+                <li key={items.id}>
+                  <h1>{items.label}</h1>
+                </li>
+              );
+            })}
+          </ul>
         </div>
         <div className="navbar__container-icons">
-          {icons.map((item) => {
-            return <a href={item.link}>{item.label}</a>;
-          })}
+          <ul>
+            {icons.map((item) => {
+              return (
+                <li key={item.id}>
+                  <a href={item.link}>{item.label}</a>
+                </li>
+              );
+            })}
+          </ul>
         </div>
       </div>
     </nav>
