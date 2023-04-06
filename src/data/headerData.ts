@@ -1,6 +1,7 @@
 interface HeaderDatas {
   logo: Logo;
   menu: Menu[];
+  icons: Icons[];
 }
 
 interface Logo {
@@ -12,6 +13,11 @@ interface Menu {
   id: number;
   label: string;
   link: string;
+}
+
+interface Icons {
+  id: number;
+  label: string;
 }
 
 export const HeaderData: HeaderDatas = {
@@ -44,6 +50,20 @@ export const HeaderData: HeaderDatas = {
       id: 5,
       label: "Contact",
       link: "/contact",
+    },
+  ],
+  icons: [
+    {
+      id: 1,
+      label: "Instagram Icon",
+    },
+    {
+      id: 2,
+      label: "Tiktok Icon",
+    },
+    {
+      id: 3,
+      label: "Facebook",
     },
   ],
 };

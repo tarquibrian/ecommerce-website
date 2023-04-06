@@ -3,12 +3,13 @@ import React from "react";
 import { HeaderData } from "@/data/headerData";
 
 const Header = () => {
+  const { logo, menu, icons } = HeaderData;
   return (
     <nav>
       <div className="navbar__container">
         <div className="navbar__container-logo"></div>
         <div className="navbar__container-menu">
-          {HeaderData.menu.map((items) => {
+          {menu.map((items) => {
             return <h1>{items.label}</h1>;
           })}
         </div>
