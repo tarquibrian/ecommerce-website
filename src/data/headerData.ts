@@ -56,17 +56,17 @@ export const HeaderData: HeaderDatas = {
     {
       id: 1,
       label: "Instagram Icon",
-      link: "instagram.com",
+      link: "https://www.instagram.com",
     },
     {
       id: 2,
       label: "Tiktok Icon",
-      link: "tiktok.com",
+      link: "https://www.tiktok.com",
     },
     {
       id: 3,
       label: "Facebook",
-      link: "facebook.com",
+      link: "https://www.facebook.com/",
     },
   ],
 };

@@ -1,4 +1,5 @@
 @import "./variables.scss";
+@import "./layout/header.scss";
 
 *,
 html {
@@ -6,15 +7,16 @@ html {
   scroll-behavior: smooth;
 }
 
+*,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   outline: none;
   list-style: none;
   text-decoration: none;
   transition: 0.2s ease;
+  box-sizing: border-box;
 }
 
 body {
@@ -26,7 +28,7 @@ body {
 main {
   margin: 0 auto;
   width: 100%;
-  // max-width: 1600px;
+  max-width: 1600px;
   min-height: 100vh;
 }
 
@@ -39,9 +41,10 @@ section {
 }
 
 a {
+  all: unset;
   display: inline-block;
   text-decoration: none;
   text-decoration-skip-ink: auto;
-  color: #fff;
+  // color: inherit;
   position: relative;
 }

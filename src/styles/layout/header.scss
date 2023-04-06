@@ -1,0 +1,14 @@
+nav {
+  // display: grid;
+  // place-content: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin-inline: auto;
+}
+.navbar__container {
+  // width: 90%;
+  // margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
