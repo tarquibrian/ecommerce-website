@@ -8,7 +8,7 @@ const Header = () => {
       <div className="navbar__container">
         <div className="navbar__container-logo"></div>
         <div className="navbar__container-menu">
-          {HeaderData.map((items) => {
+          {HeaderData.menu.map((items) => {
             return <h1>{items.label}</h1>;
           })}
         </div>
