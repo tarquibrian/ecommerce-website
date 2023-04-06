@@ -1,36 +1,19 @@
 import { link } from "fs";
 import React from "react";
-
-interface HeaderDatas {
-  id: number;
-  label: string;
-  link: string;
-}
-
-const HeaderData: HeaderDatas[] = [
-  {
-    id: 1,
-    label: "Home",
-    link: "/",
-  },
-  {
-    id: 2,
-    label: "Home",
-    link: "/",
-  },
-  {
-    id: 3,
-    label: "Home",
-    link: "/",
-  },
-];
+import { HeaderData } from "@/data/headerData";
 
 const Header = () => {
   return (
     <nav>
-      {HeaderData.map((items) => {
-        return <h1>{items.id}</h1>;
-      })}
+      <div className="navbar__container">
+        <div className="navbar__container-logo"></div>
+        <div className="navbar__container-menu">
+          {HeaderData.map((items) => {
+            return <h1>{items.label}</h1>;
+          })}
+        </div>
+        <div className="navbar__container-icons"></div>
+      </div>
     </nav>
   );
 };
