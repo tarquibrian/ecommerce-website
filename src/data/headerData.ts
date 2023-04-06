@@ -4,7 +4,7 @@ interface HeaderDatas {
   link: string;
 }
 
-const HeaderData: HeaderDatas[] = [
+export const HeaderData: HeaderDatas[] = [
   {
     id: 1,
     label: "Home",
