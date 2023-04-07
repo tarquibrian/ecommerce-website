@@ -23,25 +23,30 @@
 
 .hero__container {
   width: 100%;
-  padding: 2rem 0;
+  padding: 4rem 0;
   height: calc(100% - 45px);
   max-width: 1300px;
   margin-inline: auto;
+  position: relative;
   &-title {
-    background-color: rgba(252, 0, 0, 0.1);
     h1 {
       font-family: "Chivo Mono";
       font-weight: 900;
       font-size: clamp(1rem, 8.18vw, 6.75rem);
       line-height: 1;
+      margin-bottom: 2rem;
     }
   }
   &-desc {
-    background-color: rgba(0, 255, 55, 0.1);
-    max-width: 600px;
+    max-width: 500px;
     p {
       font-size: clamp(12px, 2vw, 18px);
       font-family: "Montserrat";
     }
+  }
+  &-img {
+    position: absolute;
+    bottom: 0%;
+    right: 5%;
   }
 }

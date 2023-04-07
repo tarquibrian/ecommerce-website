@@ -1,5 +1,7 @@
 import React from "react";
 import Header from "../layout/header";
+import imgModel from "../../images/model.png";
+import Image from "next/image";
 
 const Hero = () => {
   return (
@@ -24,7 +26,17 @@ const Hero = () => {
             manufacturing practices.
           </p>
         </div>
-        <div className="hero__container-img"></div>
+        <div className="hero__container-img">
+          <Image
+            src={imgModel}
+            alt="imgmodel fron hero"
+            width={800}
+            placeholder="blur"
+            blurDataURL={
+              "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg=="
+            }
+          />
+        </div>
       </div>
     </section>
   );
