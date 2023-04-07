@@ -41,18 +41,96 @@ const Hero = () => {
       <div className="hero__banner">
         <div className="hero__banner-list">
           <ul>
-            <li>Plus-size clothing</li>✦<li>Shoes</li>✦<li>Accessories</li>✦
-            <li>Outerwear</li>✦<li>Activewear</li>✦<li>Dresses</li>✦
-            <li>Jeans</li>✦<li>Jackets & Coats</li>✦<li>T-shirt</li>✦
-            <li>Tracksuit</li>✦<li>Blouses</li>✦<li>Blouses</li>✦
-            <li>Blouses</li>✦<li>Blouses</li>✦<li>Blouses1</li>✦
+            <li>
+              <span>Plus-size clothing</span>
+              <span>✦</span>
+            </li>
+            <li>
+              <span>Shoes</span>
+              <span>✦</span>
+            </li>
+            <li>
+              <span>Accessories</span>
+              <span>✦</span>
+            </li>
+            <li>
+              <span>Outerwear</span>
+              <span>✦</span>
+            </li>
+            <li>
+              <span>Activewear</span>
+              <span>✦</span>
+            </li>
+            <li>
+              <span>Dresses</span>
+              <span>✦</span>
+            </li>
+            <li>
+              <span>Jeans</span>
+              <span>✦</span>
+            </li>
+            <li>
+              <span>Jackets & Coats</span>
+              <span>✦</span>
+            </li>
+            <li>
+              <span>T-shirt</span>
+              <span>✦</span>
+            </li>
+            <li>
+              <span>Tracksuit</span>
+              <span>✦</span>
+            </li>
+            <li>
+              <span>Blouses</span>
+              <span>✦</span>
+            </li>
           </ul>
           <ul>
-            <li>Plus-size clothing</li>✦<li>Shoes</li>✦<li>Accessories</li>✦
-            <li>Outerwear</li>✦<li>Activewear</li>✦<li>Dresses</li>✦
-            <li>Jeans</li>✦<li>Jackets & Coats</li>✦<li>T-shirt</li>✦
-            <li>Tracksuit</li>✦<li>Blouses</li>✦<li>Blouses</li>✦
-            <li>Blouses</li>✦<li>Blouses</li>✦<li>Blouses1</li>✦{" "}
+            <li>
+              <span>Plus-size clothing</span>
+              <span>✦</span>
+            </li>
+            <li>
+              <span>Shoes</span>
+              <span>✦</span>
+            </li>
+            <li>
+              <span>Accessories</span>
+              <span>✦</span>
+            </li>
+            <li>
+              <span>Outerwear</span>
+              <span>✦</span>
+            </li>
+            <li>
+              <span>Activewear</span>
+              <span>✦</span>
+            </li>
+            <li>
+              <span>Dresses</span>
+              <span>✦</span>
+            </li>
+            <li>
+              <span>Jeans</span>
+              <span>✦</span>
+            </li>
+            <li>
+              <span>Jackets & Coats</span>
+              <span>✦</span>
+            </li>
+            <li>
+              <span>T-shirt</span>
+              <span>✦</span>
+            </li>
+            <li>
+              <span>Tracksuit</span>
+              <span>✦</span>
+            </li>
+            <li>
+              <span>Blouses</span>
+              <span>✦</span>
+            </li>
           </ul>
         </div>
       </div>
