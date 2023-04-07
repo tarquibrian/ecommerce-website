@@ -1,7 +1,7 @@
-import { link } from "fs";
 import React from "react";
 import { HeaderData } from "@/data/headerData";
 import Link from "next/link";
+import FacebookIcon from "../icons/facebook";
 
 const Header = () => {
   const { logo, menu, icons } = HeaderData;
@@ -27,7 +27,9 @@ const Header = () => {
             {icons.map((item) => {
               return (
                 <li key={item.id}>
-                  <a href={item.link}>{item.label}</a>
+                  <Link href={item.link} target="_blank" rel="noreferrer">
+                    <span>{item.component}</span>
+                  </Link>
                 </li>
               );
             })}

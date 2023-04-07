@@ -2,17 +2,17 @@ nav {
   // position: fixed;
   // top: 0;
   // left: 0;
-  background-color: rgba(0, 0, 0, 0.1);
+  // background-color: rgba(0, 0, 0, 0.1);
   width: 100%;
   margin-inline: auto;
-  height: 60px;
+  height: 70px;
 }
 .navbar__container {
   height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 1.5rem;
 
   &-logo {
     font-family: "Montserrat";
@@ -34,6 +34,27 @@ nav {
   &-icons {
     ul {
       display: flex;
+      gap: 0.8rem;
+      li {
+        span {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 32px;
+          height: 32px;
+          border-radius: 100%;
+          background-color: #e63946;
+          &:hover {
+            background-color: rgba(230, 57, 70, 0.7);
+          }
+        }
+        svg {
+          fill: transparent;
+          color: white;
+          width: 20px;
+          height: 20px;
+        }
+      }
     }
   }
 }
