@@ -33,7 +33,7 @@
     h1 {
       font-family: "Chivo Mono";
       font-weight: 900;
-      font-size: clamp(1rem, 8.18vw, 6.75rem);
+      font-size: clamp(1rem, 8vw, 6.75rem);
       line-height: 1;
       margin-bottom: 3rem;
       color: rgba(1, 1, 1, 0.8);
@@ -49,22 +49,25 @@
         // justify-content: space-between;
         // align-items: center;
         gap: 2rem;
+        white-space: nowrap;
 
         .type {
           display: flex;
           gap: 0.3rem;
           align-items: center;
-          font-size: 1.5rem;
+          font-size: clamp(0.5rem, 2vw, 1.3rem);
           border-top-left-radius: 5rem;
           border-bottom-left-radius: 5rem;
           border-top-right-radius: 5rem;
           border-bottom-right-radius: 5rem;
-          padding: 0 1.5rem;
+          padding: 0 1rem;
           border: 3px solid rgba(10, 10, 10, 0.8);
           background-color: #eb5e28;
           color: #fff;
+          white-space: nowrap;
+          width: fit-content;
           .symbol {
-            font-size: 3rem;
+            font-size: clamp(0.5rem, 3.5vw, 3rem);
             // color: #000;
           }
         }
@@ -84,6 +87,17 @@
     position: absolute;
     bottom: 0%;
     right: 0%;
+    // top: 0%;
+    width: 800px;
+    width: clamp(200px, 60vw, 800px);
+
+    // background-color: rgba(55, 55, 55, 1);
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: auto;
+      // background-color: rgba(1, 201, 1, 0.3);
+    }
   }
 }
 

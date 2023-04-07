@@ -14,7 +14,7 @@ const Hero = () => {
             <span className="flex">
               FOR ALL TASTES
               <span className="type">
-                FIND OUT <span className="symbol">✧</span>
+                FIND OUT<span className="symbol">✧</span>
               </span>
             </span>
             <span>FOR ALL GENERATIONS</span>
