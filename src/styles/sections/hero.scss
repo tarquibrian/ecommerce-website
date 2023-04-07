@@ -24,7 +24,7 @@
 .hero__container {
   width: 100%;
   padding: 4rem 0;
-  height: calc(100% - 45px);
+  height: calc(100% - 45px - 90px);
   max-width: 1300px;
   margin-inline: auto;
   position: relative;
@@ -48,5 +48,47 @@
     position: absolute;
     bottom: 0%;
     right: 5%;
+  }
+}
+
+.hero__banner {
+  color: #fff;
+  background-color: rgba(1, 1, 1, 0.9);
+  height: 90px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+  &-list {
+    font-family: "Chivo Mono";
+    font-size: 1.8rem;
+    width: 100%;
+    // max-width: 1300px;
+    // width: 1300px;
+    // margin-inline: auto;
+    // overflow: hidden;
+    // overflow-x: hidden;
+    display: flex;
+    ul {
+      display: flex;
+      gap: 2rem;
+      background-color: rgba(100, 1, 1, 1);
+      animation: banner 15s linear infinite;
+      li {
+        width: max-content;
+        white-space: nowrap;
+        text-transform: uppercase;
+      }
+    }
+
+    @keyframes banner {
+      0% {
+        transform: translate3d(0, 0%, 0);
+      }
+      100% {
+        transform: translate3d(-100%, 0%, 0);
+      }
+    }
   }
 }

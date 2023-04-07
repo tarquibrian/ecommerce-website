@@ -38,6 +38,24 @@ const Hero = () => {
           />
         </div>
       </div>
+      <div className="hero__banner">
+        <div className="hero__banner-list">
+          <ul>
+            <li>Plus-size clothing</li>✦<li>Shoes</li>✦<li>Accessories</li>✦
+            <li>Outerwear</li>✦<li>Activewear</li>✦<li>Dresses</li>✦
+            <li>Jeans</li>✦<li>Jackets & Coats</li>✦<li>T-shirt</li>✦
+            <li>Tracksuit</li>✦<li>Blouses</li>✦<li>Blouses</li>✦
+            <li>Blouses</li>✦<li>Blouses</li>✦<li>Blouses1</li>✦
+          </ul>
+          <ul>
+            <li>Plus-size clothing</li>✦<li>Shoes</li>✦<li>Accessories</li>✦
+            <li>Outerwear</li>✦<li>Activewear</li>✦<li>Dresses</li>✦
+            <li>Jeans</li>✦<li>Jackets & Coats</li>✦<li>T-shirt</li>✦
+            <li>Tracksuit</li>✦<li>Blouses</li>✦<li>Blouses</li>✦
+            <li>Blouses</li>✦<li>Blouses</li>✦<li>Blouses1</li>✦{" "}
+          </ul>
+        </div>
+      </div>
     </section>
   );
 };
