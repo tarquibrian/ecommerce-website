@@ -10,11 +10,14 @@ const Hero = () => {
       <div className="hero__container">
         <div className="hero__container-title">
           <h1>
-            URBAN MODERN FASHION
-            <br />
-            FOR ALL TASTES
-            <br />
-            FOR ALL GENERATIONS
+            <span>URBAN MODERN FASHION</span>
+            <span>
+              FOR ALL TASTES
+              <span className="type">
+                FIND OUT <span className="symbol">✧</span>
+              </span>
+            </span>
+            <span>FOR ALL GENERATIONS</span>
           </h1>
         </div>
         <div className="hero__container-desc">
