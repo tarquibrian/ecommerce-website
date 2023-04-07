@@ -1,13 +1,31 @@
 #hero {
   min-height: 100vh;
+  // background-image: radial-gradient(
+  //   circle 343px at 46.3% 47.5%,
+  //   rgba(242, 242, 242, 1) 0%,
+  //   rgba(241, 241, 241, 1) 72.9%
+  // );
+  // background-image: radial-gradient(
+  //   circle 627px at 70% 100%,
+  //   #f3f0e7ff -50%,
+  //   #d5d4d0ff 100%
+  // );
+  background-size: 100% 100%;
+  background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px,
+    0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
   background-image: radial-gradient(
-    circle 343px at 46.3% 47.5%,
-    rgba(242, 242, 242, 1) 0%,
-    rgba(241, 241, 241, 1) 72.9%
-  );
-  background-image: radial-gradient(
-    circle 627px at 70% 100%,
-    rgba(243, 240, 231, 1) -50%,
-    rgba(213, 212, 208, 1) 100%
-  );
+      18% 28% at 24% 50%,
+      #fffdefff 1%,
+      #073aff00 100%
+    ),
+    radial-gradient(18% 28% at 18% 71%, #ffffff59 6%, #073aff00 100%),
+    radial-gradient(70% 53% at 36% 76%, #f3f0e7ff 0%, #073aff00 100%),
+    radial-gradient(42% 53% at 15% 94%, #ffffffff 7%, #073aff00 100%),
+    radial-gradient(42% 53% at 34% 72%, #f7f7f7ff 7%, #073aff00 100%),
+    radial-gradient(18% 28% at 35% 87%, #ffffffff 7%, #073aff00 100%),
+    radial-gradient(31% 43% at 7% 98%, #ffffffff 24%, #073aff00 100%),
+    radial-gradient(21% 37% at 72% 23%, #f3f1f0ff 24%, #073aff00 100%),
+    radial-gradient(35% 56% at 91% 74%, #d3d3d1ff 9%, #073aff00 100%),
+    radial-gradient(74% 86% at 67% 38%, #f3f0e7ff 24%, #073aff00 100%),
+    linear-gradient(125deg, #cacacaff 1%, #adadadff 100%);
 }
