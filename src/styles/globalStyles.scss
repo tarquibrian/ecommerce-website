@@ -42,10 +42,10 @@ section {
 }
 
 a {
-  all: unset;
+  // all: unset;
   display: inline-block;
   text-decoration: none;
   text-decoration-skip-ink: auto;
-  // color: inherit;
+  color: inherit;
   position: relative;
 }

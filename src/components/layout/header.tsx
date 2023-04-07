@@ -1,6 +1,7 @@
 import { link } from "fs";
 import React from "react";
 import { HeaderData } from "@/data/headerData";
+import Link from "next/link";
 
 const Header = () => {
   const { logo, menu, icons } = HeaderData;
@@ -8,14 +9,14 @@ const Header = () => {
     <nav>
       <div className="navbar__container">
         <div className="navbar__container-logo">
-          <span>{logo.label}</span>
+          <h1>{logo.label}</h1>
         </div>
         <div className="navbar__container-menu">
           <ul>
             {menu.map((items) => {
               return (
                 <li key={items.id}>
-                  <h1>{items.label}</h1>
+                  <Link href={items.link}>{items.label}</Link>
                 </li>
               );
             })}
