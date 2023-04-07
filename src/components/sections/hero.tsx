@@ -11,7 +11,7 @@ const Hero = () => {
         <div className="hero__container-title">
           <h1>
             <span>URBAN MODERN FASHION</span>
-            <span>
+            <span className="flex">
               FOR ALL TASTES
               <span className="type">
                 FIND OUT <span className="symbol">✧</span>
