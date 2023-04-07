@@ -15,7 +15,15 @@ const Hero = () => {
             FOR ALL GENERATIONS
           </h1>
         </div>
-        <div className="hero__container-desc"></div>
+        <div className="hero__container-desc">
+          <p>
+            MODERN FASHION is a fashion brand that offers a wide range of
+            stylish and contemporary clothing for both men and women. The
+            company prides itself on its use of high-quality materials,
+            attention to detail, and commitment to ethical and sustainable
+            manufacturing practices.
+          </p>
+        </div>
         <div className="hero__container-img"></div>
       </div>
     </section>
