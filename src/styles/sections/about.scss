@@ -40,7 +40,7 @@
     }
     p {
       width: 80%;
-      font-size: clamp(12px, 1.8vw, 16px);
+      font-size: clamp(12px, 3vw, 16px);
     }
     .images {
       display: grid;
@@ -81,6 +81,48 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    // background-color: red;
+    &-left {
+      grid-column: 1 / -1;
+      z-index: 9;
+
+      header,
+      p {
+        padding: 0 4rem;
+      }
+      header {
+        padding-top: 2rem;
+        color: #fff;
+      }
+      p {
+        color: #fff;
+      }
+    }
+    &-right {
+      grid-column: 1 / -1;
+      opacity: 0.9;
+      img {
+        filter: brightness(60%) contrast(70%) blur(2px);
+      }
+    }
+  }
+
+  @media screen and (max-width: 350px) {
+    &-left {
+      header,
+      p {
+        padding: 0 3rem;
+      }
+      header {
+        padding-top: 1rem;
+      }
+    }
+    &-right {
+      padding: 1rem;
     }
   }
 }

@@ -9,7 +9,7 @@
   max-width: 1300px;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 2rem;
 
   &-title {
     h1 {
@@ -17,6 +17,7 @@
       font-weight: 900;
       font-size: clamp(1rem, 6vw, 5rem);
       line-height: 1.2;
+      margin-bottom: 1rem;
     }
   }
   &-nav {
@@ -35,6 +36,9 @@
         background-color: #eb5e28;
         color: #fff;
         font-weight: 600;
+        font-size: 1rem;
+        font-size: clamp(0.5rem, 2vw, 1rem);
+        padding: 0.8vw 1.8vw;
         &:hover {
           background-color: rgba(235, 94, 40, 0.75);
           cursor: pointer;
@@ -45,7 +49,7 @@
 
   &-article {
     display: grid;
-    grid-template-columns: repeat(3, minmax(200px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
     gap: 1rem;
     .article-card {
       display: flex;
@@ -76,6 +80,12 @@
           font-size: 1.5rem;
         }
       }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    &-article {
+      grid-template-columns: repeat(auto-fit, minmax(250px, auto));
     }
   }
 }
