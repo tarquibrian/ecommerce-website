@@ -1,0 +1,130 @@
+#footer {
+  min-height: 300px;
+  background-color: rgba(235, 94, 40, 1);
+}
+
+.footer__container {
+  width: 95%;
+  max-width: 1300px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-top: 7rem;
+  padding-bottom: 2rem;
+  color: #fff;
+  align-items: center;
+
+  li {
+    &:hover {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  &-title {
+    width: 80%;
+    margin-inline: auto;
+    text-align: center;
+    h1 {
+      font-family: "Raleway";
+      font-weight: 900;
+      font-size: clamp(1rem, 5vw, 4rem);
+      line-height: 1.2;
+    }
+  }
+
+  &-search {
+    display: flex;
+    width: 600px;
+    min-width: 150px;
+    height: 60px;
+    // background-color: rgba(1, 1, 1, 0.3);
+    position: relative;
+    margin-bottom: 4rem;
+    input {
+      padding: 1rem 2rem;
+      border-radius: 5rem;
+      border: 3px solid #000;
+      width: 100%;
+      font-size: 1rem;
+    }
+    span {
+      position: absolute;
+      top: 0;
+      right: 1%;
+      z-index: 9;
+      height: 50px;
+      padding: 1rem 2rem;
+      background-color: rgba(235, 94, 40, 1);
+      border-radius: 5rem;
+      transform: translateY(10%);
+
+      &:hover {
+        cursor: pointer;
+        background-color: rgb(245, 118, 67);
+      }
+    }
+  }
+
+  &-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    h2 {
+      text-align: center;
+    }
+
+    .menu-nav {
+      .nav-links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        font-weight: 600;
+      }
+    }
+
+    .menu-divider {
+      height: 1px;
+      background-color: #fff;
+    }
+
+    .menu-details {
+      display: flex;
+      justify-content: space-between;
+      .terms-links {
+        display: flex;
+        gap: 1rem;
+      }
+      .menu-details-icons {
+        ul {
+          display: flex;
+          gap: 0.8rem;
+          li {
+            span {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 32px;
+              height: 32px;
+              border-radius: 100%;
+              background-color: rgba(235, 94, 40, 1);
+              &:hover {
+                background-color: rgba(235, 94, 40, 0.7);
+              }
+            }
+            svg {
+              fill: transparent;
+              color: white;
+              width: 20px;
+              height: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

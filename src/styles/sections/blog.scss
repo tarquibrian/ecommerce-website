@@ -25,7 +25,6 @@
     grid-template-columns: repeat(2, minmax(200px, auto));
     grid-template-rows: masonry;
     gap: 3rem;
-    // row-gap: 4rem;
 
     .article-card {
       display: grid;
