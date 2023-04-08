@@ -3,6 +3,8 @@ import React from "react";
 import img1 from "../../images/blog1.jpg";
 import img2 from "../../images/blog2.jpg";
 import img3 from "../../images/blog3.jpg";
+import img4 from "../../images/blog4.jpg";
+import img5 from "../../images/blog5.jpg";
 
 const Blog = () => {
   return (
@@ -13,7 +15,7 @@ const Blog = () => {
         </header>
         <article className="blog__container-article">
           <div className="article-card horizontal">
-            <Image src={img1} alt="image from article blog" />
+            <Image src={img2} alt="image from article blog" />
             <div className="article-card-details">
               <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
               <p>
@@ -26,7 +28,7 @@ const Blog = () => {
             </div>
           </div>
           <div className="article-card vertical">
-            <Image src={img1} alt="image from article blog" />
+            <Image src={img3} alt="image from article blog" />
             <div className="article-card-details">
               <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
               <p>
@@ -39,7 +41,7 @@ const Blog = () => {
             </div>
           </div>
           <div className="article-card vertical">
-            <Image src={img1} alt="image from article blog" />
+            <Image src={img4} alt="image from article blog" />
             <div className="article-card-details">
               <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
               <p>
@@ -52,7 +54,7 @@ const Blog = () => {
             </div>
           </div>
           <div className="article-card horizontal">
-            <Image src={img1} alt="image from article blog" />
+            <Image src={img5} alt="image from article blog" />
             <div className="article-card-details">
               <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
               <p>
