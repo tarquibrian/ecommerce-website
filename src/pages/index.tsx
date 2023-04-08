@@ -15,10 +15,10 @@ export default function Home() {
   return (
     <Layout>
       <Hero />
-      <About />
-      <Products />
-      <Categories />
-      <Blog />
+      {/* <About /> */}
+      {/* <Products /> */}
+      {/* <Categories /> */}
+      {/* <Blog /> */}
     </Layout>
   );
 }

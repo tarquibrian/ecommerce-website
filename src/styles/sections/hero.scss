@@ -94,6 +94,18 @@
       height: auto;
     }
   }
+
+  @media screen and (max-width: 768px) {
+    &-title {
+      .flex {
+        .type {
+          padding-left: 0.3rem;
+          padding-right: 0.3rem;
+          border: 1px solid #000;
+        }
+      }
+    }
+  }
 }
 
 .hero__banner {

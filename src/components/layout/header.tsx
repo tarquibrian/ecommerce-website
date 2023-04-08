@@ -2,6 +2,7 @@ import React from "react";
 import { HeaderData } from "@/data/headerData";
 import Link from "next/link";
 import FacebookIcon from "../icons/facebook";
+import MenuIcon from "../icons/menu";
 
 const Header = () => {
   const { logo, menu, icons } = HeaderData;
@@ -34,6 +35,9 @@ const Header = () => {
               );
             })}
           </ul>
+        </div>
+        <div className="navbar__container-menuicon">
+          <MenuIcon />
         </div>
       </div>
     </nav>

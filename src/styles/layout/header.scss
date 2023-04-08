@@ -14,6 +14,7 @@ nav {
     text-transform: uppercase;
     font-weight: 900;
     font-size: 1.3rem;
+    font-size: clamp(0.5rem, 2vw, 1.3rem);
   }
 
   &-menu {
@@ -21,7 +22,12 @@ nav {
       display: flex;
       gap: 1.5rem;
       font-weight: 600;
+      font-size: 1rem;
+      font-size: clamp(0.5rem, 1.5vw, 1rem);
     }
+    // @media screen and (max-width: 768px) {
+    //   background-color: red;
+    // }
   }
 
   &-icons {
@@ -47,6 +53,30 @@ nav {
           width: 20px;
           height: 20px;
         }
+      }
+    }
+  }
+
+  &-menuicon {
+    display: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    &-menu,
+    &-icons {
+      display: none;
+    }
+
+    &-menuicon {
+      display: block;
+      width: 35px;
+      height: 35px;
+      &:hover {
+        cursor: pointer;
+      }
+      svg {
+        width: 100%;
+        height: 100%;
       }
     }
   }
