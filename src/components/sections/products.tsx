@@ -21,21 +21,75 @@ export const Products = () => {
         <article className="products__container-article">
           <div className="article-card">
             <Image src={img1} alt="card product from page" />
+            <div className="card-details">
+              <div className="details-name">
+                <h1>Relaxed Fit Teddy</h1>
+                <h2>Overshit</h2>
+              </div>
+              <div className="details-price">
+                <span>$100.19</span>
+              </div>
+            </div>
           </div>
           <div className="article-card">
             <Image src={img1} alt="card product from page" />
+            <div className="card-details">
+              <div className="details-name">
+                <h1>Relaxed Fit Teddy</h1>
+                <h2>Overshit</h2>
+              </div>
+              <div className="details-price">
+                <span>$100.19</span>
+              </div>
+            </div>
           </div>
           <div className="article-card">
             <Image src={img1} alt="card product from page" />
+            <div className="card-details">
+              <div className="details-name">
+                <h1>Relaxed Fit Teddy</h1>
+                <h2>Overshit</h2>
+              </div>
+              <div className="details-price">
+                <span>$100.19</span>
+              </div>
+            </div>
           </div>
           <div className="article-card">
             <Image src={img1} alt="card product from page" />
+            <div className="card-details">
+              <div className="details-name">
+                <h1>Relaxed Fit Teddy</h1>
+                <h2>Overshit</h2>
+              </div>
+              <div className="details-price">
+                <span>$100.19</span>
+              </div>
+            </div>
           </div>
           <div className="article-card">
             <Image src={img1} alt="card product from page" />
+            <div className="card-details">
+              <div className="details-name">
+                <h1>Relaxed Fit Teddy</h1>
+                <h2>Overshit</h2>
+              </div>
+              <div className="details-price">
+                <span>$100.19</span>
+              </div>
+            </div>
           </div>
           <div className="article-card">
             <Image src={img1} alt="card product from page" />
+            <div className="card-details">
+              <div className="details-name">
+                <h1>Relaxed Fit Teddy</h1>
+                <h2>Overshit</h2>
+              </div>
+              <div className="details-price">
+                <span>$100.19</span>
+              </div>
+            </div>
           </div>
         </article>
       </div>

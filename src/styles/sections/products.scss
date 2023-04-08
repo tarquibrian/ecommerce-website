@@ -1,0 +1,77 @@
+#products {
+  padding: 4rem 0;
+}
+
+.products__container {
+  background-color: rgba(1, 1, 1, 0.3);
+  width: 95%;
+  margin-inline: auto;
+  max-width: 1300px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  &-title {
+    h1 {
+      font-family: "Raleway";
+      font-weight: 900;
+      font-size: clamp(1rem, 6vw, 5rem);
+      line-height: 1.2;
+    }
+  }
+  &-nav {
+    ul {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      li {
+        border: 3px solid rgba(1, 1, 1, 0.8);
+        border-radius: 5rem;
+        display: flex;
+        align-items: center;
+        padding: 1rem 2rem;
+        // height: 3rem;
+        background-color: #eb5e28;
+        color: #fff;
+        font-weight: 600;
+      }
+    }
+  }
+
+  &-article {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, auto));
+    gap: 1rem;
+    .article-card {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      background-color: #fff;
+      padding: 0.8rem;
+      border-radius: 15px;
+      img {
+        border-radius: 15px;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+
+      .card-details {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .details-name {
+          // background-color: red;
+        }
+
+        .details-price {
+          font-weight: bold;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
