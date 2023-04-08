@@ -17,7 +17,7 @@ export default function Home() {
       <Hero />
       <About />
       <Products />
-      {/* <Categories /> */}
+      <Categories />
       {/* <Blog /> */}
     </Layout>
   );

@@ -23,8 +23,8 @@ export const Products = () => {
             <Image src={img1} alt="card product from page" />
             <div className="card-details">
               <div className="details-name">
-                <h1>Relaxed Fit Teddy</h1>
-                <h2>Overshit</h2>
+                <h2>Relaxed Fit Teddy</h2>
+                <h3>Overshirt</h3>
               </div>
               <div className="details-price">
                 <span>$100.19</span>
@@ -35,8 +35,8 @@ export const Products = () => {
             <Image src={img1} alt="card product from page" />
             <div className="card-details">
               <div className="details-name">
-                <h1>Relaxed Fit Teddy</h1>
-                <h2>Overshit</h2>
+                <h2>Relaxed Fit Teddy</h2>
+                <h3>Overshirt</h3>
               </div>
               <div className="details-price">
                 <span>$100.19</span>
@@ -47,8 +47,8 @@ export const Products = () => {
             <Image src={img1} alt="card product from page" />
             <div className="card-details">
               <div className="details-name">
-                <h1>Relaxed Fit Teddy</h1>
-                <h2>Overshit</h2>
+                <h2>Relaxed Fit Teddy</h2>
+                <h3>Overshirt</h3>
               </div>
               <div className="details-price">
                 <span>$100.19</span>
@@ -59,8 +59,8 @@ export const Products = () => {
             <Image src={img1} alt="card product from page" />
             <div className="card-details">
               <div className="details-name">
-                <h1>Relaxed Fit Teddy</h1>
-                <h2>Overshit</h2>
+                <h2>Relaxed Fit Teddy</h2>
+                <h3>Overshirt</h3>
               </div>
               <div className="details-price">
                 <span>$100.19</span>
@@ -71,8 +71,8 @@ export const Products = () => {
             <Image src={img1} alt="card product from page" />
             <div className="card-details">
               <div className="details-name">
-                <h1>Relaxed Fit Teddy</h1>
-                <h2>Overshit</h2>
+                <h2>Relaxed Fit Teddy</h2>
+                <h3>Overshirt</h3>
               </div>
               <div className="details-price">
                 <span>$100.19</span>
@@ -83,8 +83,8 @@ export const Products = () => {
             <Image src={img1} alt="card product from page" />
             <div className="card-details">
               <div className="details-name">
-                <h1>Relaxed Fit Teddy</h1>
-                <h2>Overshit</h2>
+                <h2>Relaxed Fit Teddy</h2>
+                <h3>Overshirt</h3>
               </div>
               <div className="details-price">
                 <span>$100.19</span>
