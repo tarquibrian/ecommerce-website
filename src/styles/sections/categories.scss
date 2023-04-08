@@ -10,6 +10,7 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  background-color: rgba(1, 1, 1, 0.3);
 
   &-title {
     h1 {
@@ -22,7 +23,8 @@
 
   &-gallery {
     display: grid;
-    grid-template-columns: repeat(2, minmax(300px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(500px, auto));
+    place-content: center;
     gap: 1rem;
 
     .gallery-card {
@@ -33,6 +35,7 @@
       justify-content: center;
       align-items: center;
       position: relative;
+      max-width: 700px;
       img {
         width: 100%;
         height: auto;
@@ -55,9 +58,11 @@
 
         span {
           font-size: 1.5rem;
+          font-size: clamp(0.8rem, 3vw, 1.5rem);
           background-color: #fff;
           font-weight: 600;
           padding: 1rem 2rem;
+          padding: 1vw 2vw;
           border: 3px solid #000;
           border-radius: 4rem;
           &:hover {
@@ -67,6 +72,25 @@
           }
         }
       }
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    &-gallery {
+      grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+      .gallery-card {
+        .card-button {
+          span {
+            border: 2px solid #000;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 350px) {
+    &-gallery {
+      grid-template-columns: repeat(auto-fit, minmax(200px, auto));
     }
   }
 }
