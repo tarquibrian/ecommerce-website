@@ -22,7 +22,8 @@
 }
 
 .hero__container {
-  width: 100%;
+  width: 95%;
+  background-color: rgba(1, 1, 1, 0.3);
   padding: 4rem 0;
   height: calc(100% - 70px - 80px);
   max-width: 1300px;
@@ -34,7 +35,7 @@
     h1 {
       font-family: "Chivo Mono";
       font-weight: 900;
-      font-size: clamp(1rem, 8vw, 6.75rem);
+      font-size: clamp(1rem, 7.6vw, 6.75rem);
       line-height: 1;
       margin-bottom: 3rem;
       color: rgba(1, 1, 1, 0.8);
