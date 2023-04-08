@@ -6,6 +6,7 @@ import Layout from "@/components/layout/layout";
 import Hero from "@/components/sections/hero";
 import About from "@/components/sections/about";
 import { Products } from "@/components/sections/products";
+import { Categories } from "@/components/sections/categories";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,6 +16,7 @@ export default function Home() {
       <Hero />
       <About />
       <Products />
+      <Categories />
     </Layout>
   );
 }
