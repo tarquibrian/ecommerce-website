@@ -120,6 +120,7 @@
   &-list {
     font-family: "Chivo Mono";
     font-size: 2rem;
+    font-size: clamp(1.5rem, 3vw, 2rem);
     width: 100%;
     display: flex;
     ul {
