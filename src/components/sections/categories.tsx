@@ -12,19 +12,27 @@ export const Categories = () => {
         <article className="categories__section-gallery">
           <div className="gallery-card">
             <Image src={img1} alt="image from gallery article" />
-            <span>T-shirt</span>
+            <div className="card-button">
+              <span>T-shirt</span>
+            </div>
           </div>
           <div className="gallery-card">
             <Image src={img1} alt="image from gallery article" />
-            <span>Oversized Jaz</span>
+            <div className="card-button">
+              <span>Oversized Jaz</span>
+            </div>
           </div>
           <div className="gallery-card">
             <Image src={img1} alt="image from gallery article" />
-            <span>Oversized T-shirt</span>
+            <div className="card-button">
+              <span>Oversized T-shirt</span>
+            </div>
           </div>
           <div className="gallery-card">
             <Image src={img1} alt="image from gallery article" />
-            <span>Fit Hoodie</span>
+            <div className="card-button">
+              <span>Fit Hoodie</span>
+            </div>
           </div>
         </article>
       </div>
