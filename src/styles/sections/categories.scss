@@ -1,2 +1,43 @@
 #categories {
 }
+
+.categories__section {
+  width: 95%;
+  margin-inline: auto;
+  max-width: 1300px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  &-title {
+    h1 {
+      font-family: "Raleway";
+      font-weight: 900;
+      font-size: clamp(1rem, 6vw, 5rem);
+      line-height: 1.2;
+    }
+  }
+
+  &-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, auto));
+    gap: 1rem;
+
+    .gallery-card {
+      aspect-ratio: 1 / 1;
+      overflow: hidden;
+      border-radius: 15px;
+      background-color: red;
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 15px;
+        filter: brightness(80%) contrast(80%);
+
+        &:hover {
+          filter: initial;
+        }
+      }
+    }
+  }
+}
