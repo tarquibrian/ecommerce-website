@@ -3,13 +3,13 @@
 }
 
 .products__container {
-  background-color: rgba(1, 1, 1, 0.3);
+  // background-color: rgba(1, 1, 1, 0.3);
   width: 95%;
   margin-inline: auto;
   max-width: 1300px;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 3rem;
 
   &-title {
     h1 {
@@ -35,6 +35,10 @@
         background-color: #eb5e28;
         color: #fff;
         font-weight: 600;
+        &:hover {
+          background-color: rgba(235, 94, 40, 0.75);
+          cursor: pointer;
+        }
       }
     }
   }
