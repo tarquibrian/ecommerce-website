@@ -95,8 +95,20 @@
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 640px) {
+    // line-height: 1;
     &-title {
+      gap: 1rem;
+      h1 {
+        gap: 1.5rem;
+        span {
+          &:nth-child(2) {
+            .type {
+              margin-left: -1rem;
+            }
+          }
+        }
+      }
       .flex {
         .type {
           padding-left: 0.3rem;
