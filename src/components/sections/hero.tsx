@@ -9,8 +9,8 @@ const Hero = () => {
       <Header />
       <div className="hero__container">
         <div className="hero__container-title">
-          <h1>
-            <span>URBAN MODERN FASHION</span>
+          <h1 translate="no">
+            <span translate="no">URBAN MODERN FASHION</span>
             <span className="flex">
               FOR ALL TASTES
               <span className="type">
