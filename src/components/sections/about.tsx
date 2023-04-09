@@ -51,10 +51,7 @@ const About = () => {
               hidden: { opacity: 0 },
             }}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut error
-            obcaecati ex, at accusantium illo sint quo amet explicabo ipsam!
-            Eaque suscipit cumque animi iste expedita voluptatum fuga similique
-            quos.
+            {AboutData.desc}
           </motion.p>
           <motion.div
             className="images"
@@ -71,8 +68,16 @@ const About = () => {
               hidden: { y: 200, opacity: 0, scale: 1 },
             }}
           >
-            <Image className="images-one" src={img2} alt="img2 fron about" />
-            <Image className="images-two" src={img3} alt="img2 fron about" />
+            <Image
+              className="images-one"
+              src={AboutData.image1}
+              alt="about image presentation"
+            />
+            <Image
+              className="images-two"
+              src={AboutData.image2}
+              alt="about image presentation"
+            />
           </motion.div>
         </div>
         <motion.div
@@ -90,7 +95,7 @@ const About = () => {
             hidden: { x: 200, opacity: 0, scale: 1 },
           }}
         >
-          <Image src={img1} alt="about image presentaion" />
+          <Image src={AboutData.image3} alt="about image presentation" />
         </motion.div>
       </div>
     </section>
