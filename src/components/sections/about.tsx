@@ -70,13 +70,13 @@ const About = () => {
           >
             <Image
               className="images-one"
-              src={AboutData.image1}
-              alt="about image presentation"
+              src={AboutData.image1.path}
+              alt={AboutData.image1.alt}
             />
             <Image
               className="images-two"
-              src={AboutData.image2}
-              alt="about image presentation"
+              src={AboutData.image2.path}
+              alt={AboutData.image2.alt}
             />
           </motion.div>
         </div>
@@ -95,7 +95,7 @@ const About = () => {
             hidden: { x: 200, opacity: 0, scale: 1 },
           }}
         >
-          <Image src={AboutData.image3} alt="about image presentation" />
+          <Image src={AboutData.image3.path} alt={AboutData.image3.alt} />
         </motion.div>
       </div>
     </section>
