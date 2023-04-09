@@ -1,15 +1,16 @@
 #blog {
-  min-width: 400px;
+  min-height: 400px;
   padding: 4rem 0;
 }
 
 .blog__container {
-  width: 90%;
+  width: 95%;
   max-width: 1300px;
   margin-inline: auto;
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  // background-color: red;
 
   &-title {
     h1 {
@@ -29,6 +30,7 @@
     .article-card {
       display: grid;
       gap: 3rem;
+      // background-color: red;
       .article-card-details {
         display: flex;
         flex-direction: column;
@@ -75,6 +77,28 @@
         gap: 2rem;
         flex-direction: column;
         justify-content: center;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    &-article {
+      grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+      .article-card {
+        gap: 1rem;
+        .article-card-details {
+          p {
+            width: 100%;
+          }
+        }
+      }
+      .horizontal {
+        grid-column: span 1;
+        grid-template-columns: repeat(1, 1fr);
+
+        .article-card-details {
+          gap: 1rem;
+        }
       }
     }
   }

@@ -18,7 +18,7 @@ export default function Home() {
       <About />
       <Products />
       <Categories />
-      {/* <Blog /> */}
+      <Blog />
     </Layout>
   );
 }
