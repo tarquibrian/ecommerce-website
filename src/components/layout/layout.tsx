@@ -13,7 +13,7 @@ const Layout = ({ children }: Props) => {
       {/* <Header /> */}
       <SEO title="Ecommerce website" />
       <main>{children}</main>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };
