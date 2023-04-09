@@ -4,6 +4,22 @@ import img1 from "../../images/product2.jpg";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 
+const itemsID = ["T-shirt", "Hoddie", "Jackets", "Shirt", "Cardigan"];
+const container = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.3,
+    },
+  },
+};
+
+const listItem = {
+  hidden: { x: 100, opacity: 0 },
+  show: { x: 0, opacity: 1 },
+};
+
 export const Products = () => {
   const [ref, inView] = useInView();
   const controls = useAnimation();
@@ -33,37 +49,54 @@ export const Products = () => {
         </motion.header>
         <motion.div
           className="products__container-nav"
-          initial="hidden"
-          animate={controls}
-          transition={{ duration: 0.8, delay: 0.3 }}
-          variants={{
-            visible: {
-              x: 0,
-              opacity: 1,
-              transition: { duration: 0.8, delay: 0.3 },
-            },
-            hidden: { x: 100, opacity: 0 },
-          }}
+          // initial="hidden"
+          // animate={controls}
+          // transition={{ duration: 0.8, delay: 0.3 }}
+          // variants={{
+          //   visible: {
+          //     x: 0,
+          //     opacity: 1,
+          //     transition: { duration: 0.8, delay: 0.3 },
+          //   },
+          //   hidden: { x: 100, opacity: 0 },
+          // }}
         >
-          <ul>
-            <li>T-shirt</li>
+          <motion.ul
+            // variants={container}
+            initial="hidden"
+            animate={controls}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            variants={{
+              visible: {
+                x: 0,
+                opacity: 1,
+                transition: { staggerChildren: 0.3, duration: 0.8, delay: 0.3 },
+              },
+              hidden: { x: 100, opacity: 0 },
+            }}
+          >
+            {itemsID.map((items, i) => {
+              return <li key={i}>{items}</li>;
+            })}
+            {/* <li>T-shirt</li>
             <li>Hoddie</li>
             <li>Jackets</li>
             <li>Shirt</li>
-            <li>Cardigan</li>
-          </ul>
+            <li>Cardigan</li> */}
+          </motion.ul>
         </motion.div>
         <motion.article
           className="products__container-article"
           initial="hidden"
           animate={controls}
-          transition={{ duration: 0.8, delay: 0.3 }}
+          transition={{ duration: 1, delay: 0.3 }}
           variants={{
             visible: {
+              y: 0,
               opacity: 1,
-              transition: { duration: 0.8, delay: 0.3 },
+              transition: { duration: 1, delay: 0.8 },
             },
-            hidden: { opacity: 0 },
+            hidden: { y: 100, opacity: 0 },
           }}
         >
           <div className="article-card">
