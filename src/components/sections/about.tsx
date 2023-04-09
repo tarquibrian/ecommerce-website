@@ -5,6 +5,7 @@ import Image from "next/image";
 import img3 from "../../images/about3.jpg";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { AboutData } from "@/data/aboutData";
 
 const variants = {
   visible: { y: 0, opacity: 1, scale: 1, transition: { duration: 0.6 } },
@@ -36,7 +37,7 @@ const About = () => {
               hidden: { opacity: 0 },
             }}
           >
-            <h1>Coulour For Every Foot</h1>
+            <h1>{AboutData.title}</h1>
           </motion.header>
           <motion.p
             initial="hidden"
