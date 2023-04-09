@@ -3,11 +3,16 @@ import { HeaderData } from "@/data/headerData";
 import Link from "next/link";
 import FacebookIcon from "../icons/facebook";
 import MenuIcon from "../icons/menu";
+import { motion } from "framer-motion";
 
 const Header = () => {
   const { logo, menu, icons } = HeaderData;
   return (
-    <nav>
+    <motion.nav
+      initial={{ y: -100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 1 }}
+    >
       <div className="navbar__container">
         <div className="navbar__container-logo">
           <h1 translate="no">{logo.label}</h1>
@@ -40,7 +45,7 @@ const Header = () => {
           <MenuIcon />
         </div>
       </div>
-    </nav>
+    </motion.nav>
   );
 };
 
