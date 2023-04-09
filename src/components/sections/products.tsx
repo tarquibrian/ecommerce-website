@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import img1 from "../../images/product2.jpg";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
+import { ProductData } from "@/data/productData";
 
 const itemsID = ["T-shirt", "Hoddie", "Jackets", "Shirt", "Cardigan"];
 const container = {
@@ -45,7 +46,7 @@ export const Products = () => {
             hidden: { x: 100, opacity: 0 },
           }}
         >
-          <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h1>
+          <h1>{ProductData.title}</h1>
         </motion.header>
         <motion.div
           className="products__container-nav"
@@ -75,8 +76,8 @@ export const Products = () => {
               hidden: { x: 100, opacity: 0 },
             }}
           >
-            {itemsID.map((items, i) => {
-              return <li key={i}>{items}</li>;
+            {ProductData.menu.map((items) => {
+              return <li key={items.id}>{items.label}</li>;
             })}
             {/* <li>T-shirt</li>
             <li>Hoddie</li>
@@ -99,78 +100,20 @@ export const Products = () => {
             hidden: { y: 100, opacity: 0 },
           }}
         >
-          <div className="article-card">
-            <Image src={img1} alt="card product from page" />
-            <div className="card-details">
-              <div className="details-name">
-                <h2>Relaxed Fit Teddy</h2>
-                <h3>Overshirt</h3>
-              </div>
-              <div className="details-price">
-                <span>$100.19</span>
-              </div>
-            </div>
-          </div>
-          <div className="article-card">
-            <Image src={img1} alt="card product from page" />
-            <div className="card-details">
-              <div className="details-name">
-                <h2>Relaxed Fit Teddy</h2>
-                <h3>Overshirt</h3>
-              </div>
-              <div className="details-price">
-                <span>$100.19</span>
+          {ProductData.products.map((items) => (
+            <div className="article-card" key={items.id}>
+              <Image src={img1} alt="card product from page" />
+              <div className="card-details">
+                <div className="details-name">
+                  <h2>{items.title}</h2>
+                  <h3>{items.desc}</h3>
+                </div>
+                <div className="details-price">
+                  <span>{items.price}</span>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="article-card">
-            <Image src={img1} alt="card product from page" />
-            <div className="card-details">
-              <div className="details-name">
-                <h2>Relaxed Fit Teddy</h2>
-                <h3>Overshirt</h3>
-              </div>
-              <div className="details-price">
-                <span>$100.19</span>
-              </div>
-            </div>
-          </div>
-          <div className="article-card">
-            <Image src={img1} alt="card product from page" />
-            <div className="card-details">
-              <div className="details-name">
-                <h2>Relaxed Fit Teddy</h2>
-                <h3>Overshirt</h3>
-              </div>
-              <div className="details-price">
-                <span>$100.19</span>
-              </div>
-            </div>
-          </div>
-          <div className="article-card">
-            <Image src={img1} alt="card product from page" />
-            <div className="card-details">
-              <div className="details-name">
-                <h2>Relaxed Fit Teddy</h2>
-                <h3>Overshirt</h3>
-              </div>
-              <div className="details-price">
-                <span>$100.19</span>
-              </div>
-            </div>
-          </div>
-          <div className="article-card">
-            <Image src={img1} alt="card product from page" />
-            <div className="card-details">
-              <div className="details-name">
-                <h2>Relaxed Fit Teddy</h2>
-                <h3>Overshirt</h3>
-              </div>
-              <div className="details-price">
-                <span>$100.19</span>
-              </div>
-            </div>
-          </div>
+          ))}
         </motion.article>
       </div>
     </section>
