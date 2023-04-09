@@ -19,7 +19,7 @@ const Hero = () => {
     }
   }, [controls, inView]);
   return (
-    <motion.section id="hero">
+    <motion.section id="hero" ref={ref}>
       <Header />
       <motion.div
         className="hero__container"
@@ -27,9 +27,21 @@ const Hero = () => {
         animate={controls}
         transition={{ duration: 0.6 }}
         variants={variants}
-        ref={ref}
       >
-        <div className="hero__container-title">
+        <motion.div
+          className="hero__container-title"
+          initial="hidden"
+          animate={controls}
+          transition={{ duration: 0.6 }}
+          variants={{
+            visible: {
+              y: 0,
+              opacity: 1,
+              transition: { duration: 0.6 },
+            },
+            hidden: { y: -400, opacity: 0 },
+          }}
+        >
           <h1 translate="no">
             <span translate="no">URBAN MODERN FASHION</span>
             <span className="flex">
@@ -40,7 +52,7 @@ const Hero = () => {
             </span>
             <span>FOR ALL GENERATIONS</span>
           </h1>
-        </div>
+        </motion.div>
         <div className="hero__container-desc">
           <p>
             MODERN FASHION is a fashion brand that offers a wide range of
@@ -50,14 +62,27 @@ const Hero = () => {
             manufacturing practices.
           </p>
         </div>
-        <div className="hero__container-img">
+        <motion.div
+          className="hero__container-img"
+          initial="hidden"
+          animate={controls}
+          transition={{ duration: 6 }}
+          variants={{
+            visible: {
+              y: 0,
+              opacity: 1,
+              transition: { duration: 0.6 },
+            },
+            hidden: { y: 100, opacity: 0 },
+          }}
+        >
           <Image
             src={imgModel}
             alt="imgmodel fron hero"
             width={800}
             placeholder="blur"
           />
-        </div>
+        </motion.div>
       </motion.div>
       <div className="hero__banner">
         <div className="hero__banner-list">
