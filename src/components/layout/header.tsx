@@ -10,7 +10,7 @@ const Header = () => {
     <nav>
       <div className="navbar__container">
         <div className="navbar__container-logo">
-          <h1>{logo.label}</h1>
+          <h1 translate="no">{logo.label}</h1>
         </div>
         <div className="navbar__container-menu">
           <ul>
