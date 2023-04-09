@@ -23,15 +23,12 @@
 
 .hero__container {
   width: 95%;
-  // background-color: rgba(1, 1, 1, 0.3);
   padding: 4rem 0;
   height: calc(100% - 70px - 80px);
   max-width: 1300px;
   margin-inline: auto;
   position: relative;
   overflow: hidden;
-  // display: grid;
-  // place-content: center;
   &-title {
     h1 {
       font-family: "Chivo Mono";
@@ -103,7 +100,6 @@
         gap: 1.5rem;
         span {
           word-spacing: -5px;
-          // word-wrap: break-word;
           white-space: initial;
           &:nth-child(2) {
             .type {
