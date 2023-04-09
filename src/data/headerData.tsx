@@ -40,22 +40,22 @@ export const HeaderData: HeaderDatas = {
     {
       id: 2,
       label: "Products",
-      link: "/products",
+      link: "/",
     },
     {
       id: 3,
       label: "Testimonials",
-      link: "/testimonials",
+      link: "/",
     },
     {
       id: 4,
       label: "Blog",
-      link: "/blog",
+      link: "/",
     },
     {
       id: 5,
       label: "Contact",
-      link: "/contact",
+      link: "/",
     },
   ],
   icons: [
