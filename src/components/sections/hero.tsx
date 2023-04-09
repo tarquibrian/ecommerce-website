@@ -1,13 +1,34 @@
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Header from "../layout/header";
 import imgModel from "../../images/model.png";
 import Image from "next/image";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
+const variants = {
+  visible: { y: 0, opacity: 1, scale: 1, transition: { duration: 0.6 } },
+  hidden: { y: 200, opacity: 0, scale: 1 },
+};
 
 const Hero = () => {
+  const [ref, inView] = useInView();
+  const controls = useAnimation();
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
   return (
-    <section id="hero">
+    <motion.section id="hero">
       <Header />
-      <div className="hero__container">
+      <motion.div
+        className="hero__container"
+        initial="hidden"
+        animate={controls}
+        transition={{ duration: 0.6 }}
+        variants={variants}
+        ref={ref}
+      >
         <div className="hero__container-title">
           <h1 translate="no">
             <span translate="no">URBAN MODERN FASHION</span>
@@ -37,7 +58,7 @@ const Hero = () => {
             placeholder="blur"
           />
         </div>
-      </div>
+      </motion.div>
       <div className="hero__banner">
         <div className="hero__banner-list">
           <ul>
@@ -134,7 +155,7 @@ const Hero = () => {
           </ul>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

@@ -11,7 +11,7 @@ const Header = () => {
     <motion.nav
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 1 }}
+      transition={{ duration: 0.6 }}
     >
       <div className="navbar__container">
         <div className="navbar__container-logo">
