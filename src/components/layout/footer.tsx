@@ -2,13 +2,14 @@ import React from "react";
 import FacebookIcon from "../icons/facebook";
 import InstagramIcon from "../icons/instagram";
 import TiktokIcon from "../icons/tiktok";
+import { FooterData } from "@/data/footerData";
 
 const Footer = () => {
   return (
     <footer id="footer">
       <div className="footer__container">
         <header className="footer__container-title">
-          <h1>Find Your Unique Street Style at Our Ecommerce</h1>
+          <h1>{FooterData.title}</h1>
         </header>
         <div className="footer__container-search">
           <input
@@ -20,29 +21,21 @@ const Footer = () => {
           <span>Subscribe</span>
         </div>
         <div className="footer__container-menu">
-          <h2>MODERNFASHION</h2>
+          <h2>{FooterData.subtitle}</h2>
           <div className="menu-nav">
             <ul className="nav-links">
-              <li>Home</li>
-              <li>Product</li>
-              <li>Testimonial</li>
-              <li>Blog</li>
-              <li>Contact</li>
+              {FooterData.menu.map((item) => (
+                <li key={item.id}>{item.label}</li>
+              ))}
             </ul>
           </div>
           <div className="menu-divider"></div>
           <div className="menu-details">
             <div className="menu-details-icons">
               <ul>
-                <li>
-                  <FacebookIcon />
-                </li>
-                <li>
-                  <InstagramIcon />
-                </li>
-                <li>
-                  <TiktokIcon />
-                </li>
+                {FooterData.icons.map((icon) => (
+                  <li key={icon.id}>{icon.component}</li>
+                ))}
               </ul>
             </div>
             <div className="menu-detail-terms">
