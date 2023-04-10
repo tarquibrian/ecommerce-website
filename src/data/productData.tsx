@@ -1,3 +1,11 @@
+import { StaticImageData } from "next/image";
+import img1 from "../images/product1.jpg";
+import img2 from "../images/product2.jpg";
+import img3 from "../images/product3.jpg";
+import img4 from "../images/product4.jpg";
+import img5 from "../images/product5.jpg";
+import img6 from "../images/product6.jpg";
+
 interface ProductDatas {
   title: string;
   menu: Menu[];
@@ -14,6 +22,7 @@ interface Products {
   title: string;
   desc: string;
   price: string;
+  image: string | StaticImageData;
 }
 
 export const ProductData: ProductDatas = {
@@ -46,36 +55,42 @@ export const ProductData: ProductDatas = {
       title: "Relaxed Fit Teddy",
       desc: "Overshirt",
       price: "$100.19",
+      image: img1,
     },
     {
       id: 2,
       title: "Relaxed Fit Teddy",
       desc: "Overshirt",
       price: "$100.19",
+      image: img2,
     },
     {
       id: 3,
       title: "Relaxed Fit Teddy",
       desc: "Overshirt",
       price: "$100.19",
+      image: img3,
     },
     {
       id: 4,
       title: "Relaxed Fit Teddy",
       desc: "Overshirt",
       price: "$100.19",
+      image: img4,
     },
     {
       id: 5,
       title: "Relaxed Fit Teddy",
       desc: "Overshirt",
       price: "$100.19",
+      image: img5,
     },
     {
       id: 6,
       title: "Relaxed Fit Teddy",
       desc: "Overshirt",
       price: "$100.19",
+      image: img6,
     },
   ],
 };

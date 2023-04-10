@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import img1 from "../../images/product2.jpg";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { CategoriesData } from "@/data/categoriesData";
 
 export const Categories = () => {
   const [ref, inView] = useInView();
@@ -32,7 +33,7 @@ export const Categories = () => {
             },
           }}
         >
-          <h1>New Collection: ModerFashion For The Fashion-Forward</h1>
+          <h1>{CategoriesData.title}</h1>
         </motion.header>
         <motion.article
           className="categories__section-gallery"
@@ -48,30 +49,14 @@ export const Categories = () => {
             hidden: { y: 100, opacity: 0 },
           }}
         >
-          <div className="gallery-card">
-            <Image src={img1} alt="image from gallery article" />
-            <div className="card-button">
-              <span>T-shirt</span>
+          {CategoriesData.categories.map((category) => (
+            <div className="gallery-card" key={category.id}>
+              <Image src={category.path} alt="image from gallery article" />
+              <div className="card-button">
+                <span>{category.label}</span>
+              </div>
             </div>
-          </div>
-          <div className="gallery-card">
-            <Image src={img1} alt="image from gallery article" />
-            <div className="card-button">
-              <span>Oversized Jaz</span>
-            </div>
-          </div>
-          <div className="gallery-card">
-            <Image src={img1} alt="image from gallery article" />
-            <div className="card-button">
-              <span>Oversized T-shirt</span>
-            </div>
-          </div>
-          <div className="gallery-card">
-            <Image src={img1} alt="image from gallery article" />
-            <div className="card-button">
-              <span>Fit Hoodie</span>
-            </div>
-          </div>
+          ))}
         </motion.article>
       </div>
     </section>
