@@ -7,6 +7,7 @@ import img4 from "../../images/blog4.jpg";
 import img5 from "../../images/blog5.jpg";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { BlogData } from "@/data/blogData";
 
 const Blog = () => {
   const [ref, inView] = useInView();
@@ -33,7 +34,7 @@ const Blog = () => {
             hidden: { x: 100, opacity: 0 },
           }}
         >
-          <h1>Fashion News</h1>
+          <h1>{BlogData.title}</h1>
         </motion.header>
         <motion.article
           className="blog__container-article"
@@ -49,7 +50,20 @@ const Blog = () => {
             hidden: { y: 100, opacity: 0 },
           }}
         >
-          <div className="article-card horizontal">
+          {BlogData.articles.map((article) => (
+            <div
+              key={article.id}
+              className={`article-card ${article.span ? "horizontal" : ""}`}
+            >
+              <Image src={article.path} alt="image from article blog" />
+              <div className="article-card-details">
+                <h2>{article.title}</h2>
+                <p>{article.desc}</p>
+                <span>{article.button}</span>
+              </div>
+            </div>
+          ))}
+          {/* <div className="article-card horizontal">
             <Image src={img2} alt="image from article blog" />
             <div className="article-card-details">
               <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
@@ -100,7 +114,7 @@ const Blog = () => {
               </p>
               <span>View More</span>
             </div>
-          </div>
+          </div> */}
         </motion.article>
       </div>
     </section>

@@ -1,8 +1,8 @@
 import { StaticImageData } from "next/image";
-import img1 from "../images/blog1.jpg";
-import img2 from "../images/blog2.jpg";
-import img3 from "../images/blog3.jpg";
-import img4 from "../images/blog4.jpg";
+import img1 from "../images/blog2.jpg";
+import img2 from "../images/blog3.jpg";
+import img3 from "../images/blog4.jpg";
+import img4 from "../images/blog5.jpg";
 
 interface BlogDatas {
   title: string;
@@ -15,6 +15,7 @@ interface Articles {
   title: string;
   desc: string;
   button: string;
+  span: boolean;
 }
 
 export const BlogData: BlogDatas = {
@@ -26,6 +27,7 @@ export const BlogData: BlogDatas = {
       title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quibusdam cumque eum sequi voluptatibus aut corporis pariatur illum veritatis doloremque velit, cupiditate corrupti odit in vel qui. Quo, accusantium possimus.",
       button: "View More",
+      span: true,
     },
     {
       id: 2,
@@ -33,6 +35,7 @@ export const BlogData: BlogDatas = {
       title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quibusdam cumque eum sequi voluptatibus aut corporis pariatur illum veritatis doloremque velit, cupiditate corrupti odit in vel qui. Quo, accusantium possimus.",
       button: "View More",
+      span: false,
     },
     {
       id: 3,
@@ -40,6 +43,7 @@ export const BlogData: BlogDatas = {
       title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quibusdam cumque eum sequi voluptatibus aut corporis pariatur illum veritatis doloremque velit, cupiditate corrupti odit in vel qui. Quo, accusantium possimus.",
       button: "View More",
+      span: false,
     },
     {
       id: 4,
@@ -47,6 +51,7 @@ export const BlogData: BlogDatas = {
       title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quibusdam cumque eum sequi voluptatibus aut corporis pariatur illum veritatis doloremque velit, cupiditate corrupti odit in vel qui. Quo, accusantium possimus.",
       button: "View More",
+      span: true,
     },
   ],
 };
