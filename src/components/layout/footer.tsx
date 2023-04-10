@@ -38,6 +38,17 @@ const Footer = () => {
                 ))}
               </ul>
             </div>
+            <div className="menu-details-author">
+              <h1>
+                <a
+                  aria-label="Author website"
+                  href="https://tarquibrian.com/"
+                  target={`_blank`}
+                >
+                  Powered by @Darvy
+                </a>
+              </h1>
+            </div>
             <div className="menu-detail-terms">
               <ul className="terms-links">
                 <li>Terms</li>
@@ -46,6 +57,7 @@ const Footer = () => {
               </ul>
             </div>
           </div>
+          {/* <div className="menu-divider"></div> */}
         </div>
       </div>
     </footer>
