@@ -63,6 +63,11 @@
         width: 100%;
         height: auto;
         object-fit: cover;
+        filter: brightness(80%) contrast(80%);
+
+        &:hover {
+          filter: initial;
+        }
       }
 
       .card-details {
@@ -76,6 +81,9 @@
             font-size: 1.2rem;
             font-size: clamp(16px, 2vw, 1.3rem);
             margin-bottom: 0.4rem;
+            &:hover {
+              cursor: pointer;
+            }
           }
           h3 {
             // font-size: 2rem;
