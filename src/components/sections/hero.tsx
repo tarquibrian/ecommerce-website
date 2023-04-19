@@ -6,7 +6,12 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const variants = {
-  visible: { y: 0, opacity: 1, scale: 1, transition: { duration: 0.6 } },
+  visible: {
+    y: 0,
+    opacity: 1,
+    scale: 1,
+    transition: { duration: 0.6, delay: 0.6 },
+  },
   hidden: { y: 200, opacity: 0, scale: 1 },
 };
 
@@ -37,9 +42,9 @@ const Hero = () => {
             visible: {
               y: 0,
               opacity: 1,
-              transition: { duration: 0.6 },
+              transition: { duration: 0.6, delay: 0.6 },
             },
-            hidden: { y: -400, opacity: 0 },
+            hidden: { y: -300, opacity: 0 },
           }}
         >
           <h1 translate="no">
@@ -66,14 +71,14 @@ const Hero = () => {
           className="hero__container-img"
           initial="hidden"
           animate={controls}
-          transition={{ duration: 6 }}
+          transition={{ duration: 6, delay: 0.6 }}
           variants={{
             visible: {
               y: 0,
               opacity: 1,
-              transition: { duration: 0.6 },
+              transition: { duration: 0.6, delay: 0.6 },
             },
-            hidden: { y: 100, opacity: 0 },
+            hidden: { y: 200, opacity: 0 },
           }}
         >
           <Image
